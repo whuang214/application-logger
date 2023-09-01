@@ -6,7 +6,7 @@ def main():
     ezsheets.init()
 
     # Get the spreadsheet by its ID or URL. Replace with your Spreadsheet ID or URL.
-    ss = ezsheets.Spreadsheet("1TE_EkneOkYaK9j7eSOM9i3mga3s1c5XxJFEe6xGvNJg")
+    ss = ezsheets.Spreadsheet("")
 
     # Get the first sheet
     sheet = ss[0]
