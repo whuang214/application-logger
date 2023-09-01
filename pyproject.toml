@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "application-logger"
+version = "0.1.0"
+description = ""
+authors = ["Will Huang <whuang2146@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+ezsheets = "^2023.8.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
