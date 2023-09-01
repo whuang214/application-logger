@@ -1,4 +1,14 @@
 import ezsheets
+import os
+from dotenv import load_dotenv
+
+# Load the environment variables
+load_dotenv()
+
+# Get the spreadsheet ID from environment variables or ask the user
+SPREADSHEET_ID = os.environ.get("SPREADSHEET_ID")
+if not SPREADSHEET_ID:
+    SPREADSHEET_ID = input("Please enter the spreadsheet ID or link: ")
 
 
 def main():
@@ -6,7 +16,7 @@ def main():
     ezsheets.init()
 
     # Get the spreadsheet by its ID or URL. Replace with your Spreadsheet ID or URL.
-    ss = ezsheets.Spreadsheet("")
+    ss = ezsheets.Spreadsheet(SPREADSHEET_ID)
 
     # Get the first sheet
     sheet = ss[0]
