@@ -24,6 +24,10 @@ def main():
     # Print the title of the sheet
     print(sheet.title)
 
+    # Print first row (headers)
+    headers = sheet.getRow(1)
+    print(headers)
+
 
 if __name__ == "__main__":
     main()
